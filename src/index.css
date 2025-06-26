@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist");
+@import "tailwindcss";
+@plugin "daisyui";
+
+.urbanist {
+  font-family: "Urbanist", sans-serif;
+}
