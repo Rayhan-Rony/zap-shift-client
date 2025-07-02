@@ -1,7 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist");
 @import "tailwindcss";
 @plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #caeb66;
+  --color-secondary: teal;
+}
 
 .urbanist {
   font-family: "Urbanist", sans-serif;
 }
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 25s linear infinite;
+}
+/* .vertical-dashed-divider {
+  border-left: 2px dashed transparent;
+  border-image: repeating-linear-gradient(
+    to bottom,
+    #d1d5db 0px,
+    #d1d5db 4px,
+    transparent 4px,
+    transparent 12px
+  );
+  border-image-slice: 1;
+} */
